@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -11,10 +11,10 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-N2FPpOy9wKo4tI8lzhTwcv4JnI/cTCltoPpJUraTpCmSveUnWf+8w4xbtyFeZq/pGHqDRjKPe7DpNnx6Hb/DlA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
    
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="manifest" href="/manifest.json" />
    
     <title>Porfolio</title>
-  </head>
+  <script defer src="/static/js/bundle.js"></script></head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

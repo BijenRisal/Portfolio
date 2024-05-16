@@ -1,38 +1,760 @@
-.App {
+/* Navbar  */
+body{
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+ 
+  background-color: #fff; 
+  border: 1px solid wheat;
+}
+
+.logo {
+  width: 100px;
+}
+
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+
+.menulistitem {
+  margin-right: 20px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menulistitem:hover {
+  color: #007bff;
+}
+
+
+.box {
+  display: flex;
+  align-items: center;
+}
+
+
+.box .contactbtn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #007bff; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contactbtn:hover {
+  background-color: #0056b3;
+}
+
+
+/* Home */
+
+#home{
+  height: 100vh;
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  /* position: absolute; */
+}
+
+  .profile {
+    width: 22vw;
+    position: absolute;
+    top: 11rem;
+    right: 15rem;
+    z-index: -1;
+    object-fit: cover;
+    height: 82vh;
+}
+.home-content{
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hello{
+font-size: 1.75rem;
+font-weight: 100;
+}
+.homename{
+color: blue;
+}
+.homeparagraph{
+font-size: large;
+font-weight: 300;
+}
+.btn-group {
+  display: flex;
+  align-items: center;
+}
+.btn{
+  height: 2rem;
+  width: 9rem;
+  background-color: white;
+  color: black;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid blue;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+/* SKILLS */
+
+
+#skills {
+  padding: 50px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.skill-title {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; 
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.skill-description {
+  display: block;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.skill-bars {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.skill-bar {
+  width: 200px; 
+  margin: 0 20px;
+}
+
+
+.skillbar-text {
+  background-color: #fff; 
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  transition: transform 0.3s ease; 
+}
+
+
+.skillbar-text:hover {
+  transform: translateY(-5px); 
+}
+
+
+.skillbar-text h2 {
+  font-size: 20px;
+  color: black; 
+  margin-bottom: 10px;
+}
+
+.skillbar-text p {
+  font-size: 16px;
+  color: black;
+  margin: 0;
+}
+
+.skillbar-text img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px; 
+}
+
+
+
+/* Works  */
+
+#works {
+  padding: 50px 0;
+  
+  text-align: center;
+}
+
+
+.work-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: black; 
+  margin-bottom: 20px;
+}
+
+.works-description {
+  font-size: 18px;
+  color: black; 
+  margin-bottom: 30px;
+}
+.project a {
+  text-decoration: none; /* Remove underline from the link */
+  color: inherit; /* Inherit color from parent */
+}
+
+.project a:hover {
+  text-decoration: none; 
+  
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  width: calc(27.33% - 40px);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 2px solid black;
+}
+
+.project-image {
+  width: 50%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.project h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin: 20px 0 10px;
+}
+
+.project p {
+  font-size: 16px;
+  color: black; 
+  margin: 0 20px 20px;
+}
+
+.project:hover {
+  transform: translateY(-5px); 
+  color: blue;
+  border: 2px solid blue;
+ 
+}
+
+/* Contacts */
+
+.contact-page{
+min-height: calc (100vh - 4rem);
+width: 100vw;
+max-width: 60rem;
+margin: 0 auto;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.contact-title{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.client-description{
+font-weight: 300;
+}
+
+  .client-imgs {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between; 
+    border: 2px solid #ccc; 
+    border-radius: 8px;
+    padding: 10px; 
+    flex-wrap: wrap;
+  }
+  
+
+.client-imgs img {
+  flex: 1; 
+  max-width: 23%; 
+  object-fit: cover;
+  min-width: 9rem;
+  margin: auto;
+  padding: 0.25rem;
+ 
+}
+
+.contact-form-container {
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+
+.contact-description {
+  font-size: 18px;
+  color: black; 
+  margin-bottom: 30px;
+}
+
+
+.contact-form {
+  max-width: 500px; 
+  margin: 20px auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form .submitbtn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; 
+  color: #fff; 
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+ 
+}
+
+
+.links{
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.link{
+  object-fit: cover;
+  height: 2rem;
+  width: 2rem;
+  margin: 0 0.75rem;
+}
+.link:hover {
+  transform: translateY(-4px); 
+ 
+}
+
+/* Footer */
+
+.footer{
+width: 100vw;
+height: 4rem;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 300;
+font-size: medium;
+padding-top: 1rem;
+
+}
+
+
+.project-description {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.project-image {
+  flex: 0 0 40%;
+  margin-right: 20px;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-details {
+  flex: 1;
+}
+
+.project-details h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.technical-sheet {
+  font-size: 16px;
+}
+
+.technical-sheet h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.technical-sheet ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.technical-sheet li {
+  margin-bottom: 5px;
+}
+
+/* LoginForm */
+
+/* CSS for LoginForm */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+ width: 50vw;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+  font-size: 24px;
+}
+
+.error-message {
+  color: #ff0000;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-bottom: 2px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #333333;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.remember-forgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: #666666;
+  font-size: 14px;
+}
+
+.remember-forgot input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+  
+
+/* Add more styles as needed */
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  border-right: 1px solid #ccc;
+  background-color: #f0f0f0;
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.sidebar-nav {
+  padding: 20px;
+}
+
+.sidebar-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-nav ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar-nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.sidebar-nav ul li a.active {
+  font-weight: bold;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.main-content header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.work-item {
+  margin-bottom: 20px;
+}
+
+.work-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* AdminSkills */
+.container {
+  display: flex;
+ 
+  height: 100vh;
+}
+
+.nav {
+  background-color: #333;
+  padding: 20px;
+  width: 12vw;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav ul li {
+ 
+  margin-bottom: 10px;
+    font-size: 20px;
+    border: 2px solid red;
+
+}
+
+.nav ul li a {
   color: white;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.nav ul li a:hover {
+  color: #ff9900;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  margin-left: 20px;
+  width: 84vw;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.add-skill button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  width: 9rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+.add-skill button:hover {
+  background-color: #45a049;
+}
+
+.skills-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.skills-table th,
+.skills-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.skills-table th {
+  background-color: #f2f2f2;
+}
+
+.skills-table button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 5px;
+}
+
+.skills-table button.delete {
+  background-color: #d32f2f;
+}
+
+.skills-table button:hover {
+  background-color: #e57373;
+}
+
+.skills-table button.delete:hover {
+  background-color: #c62828;
+}
+
+/* AddSkills */
+
+.container {
+  display: flex;
+}
+
+.nav {
+  background-color: #333;
+  width: 200px;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav ul li {
+  padding: 10px;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #ffcc00; /* Change color on hover */
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form {
+  max-width: 400px;
+ 
+  width: 50vw;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; /* Darker shade on hover */
 }
