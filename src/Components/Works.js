@@ -19,31 +19,58 @@ const Works = () => {
                     <h3>E-commerce</h3>
                     <p>Designed and developed an e-commerce website using React.js.</p>
                     </Link>
+                    <div class="buttons">
+                    <button class="view-info">View Info</button>
+                    <a href="" class="github-link" target="_blank">GitHub</a>
+                </div>
                 </div>
                 <div className="project">
                     <img src={Weather} alt="Project 2" className="project-image" />
                     <h3>Weather Dashboard</h3>
                     <p>Built a weather dashboard application using React.js and.</p>
+                    <div class="buttons">
+                    <button class="view-info">View Info</button>
+                    <a href="" class="github-link" target="_blank">GitHub</a>
+                </div>
                 </div>
                 <div className="project">
                     <img src={Bookstore} alt="Project 3" className="project-image" />
                     <h3>Online Bookstore</h3>
                     <p>Developed a full-stack online bookstore using React.js, Node.js, and MongoDB.</p>
+                    <div class="buttons">
+                    <button class="view-info">View Info</button>
+                    <a href="" class="github-link" target="_blank">GitHub</a>
+                </div>
                 </div>
                 <div className="project">
                     <img src={Recipe} alt="Project 1" className="project-image" />
                     <h3>Recipe Finder</h3>
                     <p>Users can search for recipes by ingredients, cuisine, diet, and meal type.</p>
+                    <div class="buttons">
+                    <button class="view-info">View Info</button>
+                    <a href="" class="github-link" target="_blank">GitHub</a>
                 </div>
+                    </div>
                 <div className="project">
                     <img src={Task} alt="Project 2" className="project-image" />
                     <h3>Task Management App</h3>
                     <p>Features include task creation, assignment, deadline tracking, and status updates.</p>
+                    <div class="buttons">
+                    <button class="view-info">View Info</button>
+                    <a href="" class="github-link" target="_blank">GitHub</a>
+                </div>
                 </div>
                 <div className="project">
+                <Link to="/portfolioproject">
+                
                     <img src={Portfolio} alt="Project 3" className="project-image" />
                     <h3>Portfolio</h3>
                     <p>Created a personal portfolio website to showcase projects and skills.</p>
+                
+                </Link><div class="buttons">
+                   <Link to= "/portfolioproject"> <button class="view-info">View Info</button></Link>
+                   <Link to="https://github.com/BijenRisal/Portfolio" class="github-link" target="_blank">GitHub</Link>
+                </div>
                 </div>
             </div>
         </section>
