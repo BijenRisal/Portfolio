@@ -1,38 +1,31 @@
-import React from "react";
-import HTML from "../Assets/html.png";
-import UI from "../Assets/ui-ux.png";
-import Reacts from "../Assets/react.png";
-
+import React, { useEffect, useState } from 'react';
 
 const Skills = () => {
+  const [skills, setSkills] = useState(JSON.parse(localStorage.getItem('skills')) || []);
+
+  useEffect(() => {
+    const storedSkills = JSON.parse(localStorage.getItem('skills'));
+    if (storedSkills) {
+      setSkills(storedSkills);
+    }
+  }, []);
+
   return (
     <section id="skills">
       <span className="skill-title">My Expertise</span>
       <span className="skill-description">
-        I am a skilled and passionate web designer and developer with the beginner experience in software design and development.
+        I am a skilled and passionate web designer and developer with beginner experience in software design and development.
       </span>
       <div className="skill-bars">
-        <div className="skill-bar">
-          <div className="skillbar-text">
-            <img src={UI} alt="UI/UX" className="skill-icon" />
-            <h2>UI/UX Design</h2>
-           
+        {skills.map((skill, index) => (
+          <div key={index} className="skill-bar">
+            <div className="skillbar-text">
+              {skill.file && <img src={skill.file} alt={skill.name} className="skill-icon" />}
+              <h2>{skill.name}</h2>
+              <p>{skill.description}</p>
+            </div>
           </div>
-        </div>
-        <div className="skill-bar">
-          <div className="skillbar-text">
-            <img src={HTML} alt="HTML/CSS" className="skill-icon" />
-            <h2>HTML/CSS</h2>
-           
-          </div>
-        </div>
-        <div className="skill-bar">
-          <div className="skillbar-text">
-            <img src={Reacts} alt="React" className="skill-icon" />
-            <h2>React</h2>
-            
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

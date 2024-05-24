@@ -15,8 +15,10 @@ const AddWorksDetails = ({ addSkill }) => {
   return (
     <div className="container">
       <div className="sidebar">
+       
+      <Link to="/uploadcv"><button>Upload CV</button></Link>
         <Link to="/adminskills"><button>Skills</button></Link>
-        <Link to="addworks"><button>Works</button></Link>
+        <Link to="/addworks"><button>Works</button></Link>
         <Link to="/addclients"><button>Clients</button></Link>
         <Link to="/"><button>Log Out</button></Link>
       </div>

@@ -1,9 +1,14 @@
 import React from "react";
 import Ecommerce1 from '../Assets/E-commerce1.png'
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 
 const EcommerceProject = () => {
     return (
+        <div>
+
+<Navbar/>
         <div className="project-description">
             <div className="project-image">
                 <img src={Ecommerce1} alt="E-commerce Project" />
@@ -21,6 +26,8 @@ const EcommerceProject = () => {
                     </ul>
                 </div>
             </div>
+        </div>
+        <Footer />
         </div>
     );
 }
