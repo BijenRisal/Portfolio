@@ -14,13 +14,13 @@ const Home = () => {
 
     return (
         <section id="home">
-            <div className="home-content">
-                <span className="hello">Hello</span>
+            <div className="home-content  fade-in-from-left">
+                <span className="hello">Hello There!😉</span>
                 <span className="hometext">I'm <span className="homename">Bijen</span><br/></span>
-                <p className="homeparagraph">I am a beginner web designer with little experience in creating software.</p>
+                <p className="homeparagraph">I am a beginner web designer and developer with <br></br>little experience in creating software.</p>
                 <Link>
                     <div className="btn-group">
-                        <button className="btn" onClick={() => { document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}>Hire Me</button>
+                        <button className="btn" onClick={() => { document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}>Hire me</button>
                         <button className="btn" onClick={openPdfInNewTab}>Download CV</button> 
                     </div>
                 </Link>

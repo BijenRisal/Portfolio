@@ -11,7 +11,7 @@ const LoginForm = () => {
         event.preventDefault();
         if (username === 'admin' && password === 'admin') {
           
-            navigate('/admin');
+            navigate('/adminskills');
         } else {
             setErrorMessage('Invalid username or password');
         }

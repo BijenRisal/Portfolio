@@ -7,9 +7,9 @@ import Reacts from "../Assets/react.png";
 const Skills = () => {
   return (
     <section id="skills">
-      <span className="skill-title">What I Do</span>
+      <span className="skill-title">My Expertise</span>
       <span className="skill-description">
-        I am a skilled and passionate web designer with beginner experience in software development
+        I am a skilled and passionate web designer and developer with the beginner experience in software design and development.
       </span>
       <div className="skill-bars">
         <div className="skill-bar">

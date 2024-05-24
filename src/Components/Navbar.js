@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="box">
         {/* <button className="contactbtn" onClick={() => { downloadFileAtURL(JPG_FILE_URL) }}>Download CV </button> */}
         {/* <button className="contactbtn" onClick={() => { document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}>Contact</button> */}
-        <RouterLink to="/login" className="contactbtn">Developer Mode</RouterLink> {/* Use RouterLink */}
+        <RouterLink to="/login" className="contactbtn"> &lt; / &gt; </RouterLink> {/* Use RouterLink */}
       </div>
     </nav>
   );

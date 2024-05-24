@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-const AddSkill = ({ addSkill }) => {
+const AddWorksDetails = ({ addSkill }) => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const navigate = useNavigate();
@@ -9,7 +9,7 @@ const AddSkill = ({ addSkill }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     addSkill({ name, description });
-    navigate("/adminskills");
+    navigate("/addworks");
   };
 
   return (
@@ -59,4 +59,4 @@ const AddSkill = ({ addSkill }) => {
   );
 };
 
-export default AddSkill;
+export default AddWorksDetails;

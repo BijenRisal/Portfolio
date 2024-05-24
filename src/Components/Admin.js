@@ -7,7 +7,7 @@ const Admin = () => {
     <div className="grid">
       <div className="sidebar">
         <div className="sidebar-header">
-          <h2>Acme Portfolio</h2>
+          <h2> Portfolio</h2>
         </div>
         <div className="sidebar-nav">
           <ul>
@@ -19,19 +19,19 @@ const Admin = () => {
       </div>
       <div className="main-content">
         <header>
-          <h1>Portfolio Management</h1>
+          <h2>Portfolio Management</h2>
         </header>
         <main>
           <section>
-            <h2>Skills</h2>
+            <h3>Skills</h3>
             <p>Add or edit your skills here.</p>
           </section>
           <section>
-            <h2>Clients</h2>
+            <h3>Clients</h3>
             <p>Manage your clients here.</p>
           </section>
           <section>
-            <h2>Works</h2>
+            <h3>Works</h3>
             <div className="work-item">
               <img src={Reacts} alt="Work 1" />
               <h3>Acme Website</h3>

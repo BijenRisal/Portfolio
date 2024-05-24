@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import DeleteSkillButton from "./AdminControl/DeleteSkillButton";
+import DeleteSkillButton from "./DeleteSkillButton";
 
-const AdminSkills = ({ skills, deleteSkill }) => {
+const AddWorks = ({ skills, deleteSkill }) => {
   return (
     <div className="admin-container">
       {/* Sidebar */}
@@ -14,12 +14,12 @@ const AdminSkills = ({ skills, deleteSkill }) => {
       </div>
       {/* Content */}
       <div className="content">
-        <h1>My Skills</h1>
-        <Link to="/addskills"><button className="add-skill-btn">Add Skill</button></Link>
+        <h1>My Works</h1>
+        <Link to="/addskills"><button className="add-skill-btn">Add Work</button></Link>
         <table className="skills-table">
           <thead>
             <tr>
-              <th>Skill</th>
+              <th>Works</th>
               <th>Description</th>
               <th>Actions</th>
             </tr>
@@ -42,4 +42,4 @@ const AdminSkills = ({ skills, deleteSkill }) => {
   );
 };
 
-export default AdminSkills;
+export default AddWorks;

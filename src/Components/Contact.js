@@ -32,7 +32,7 @@ const Contact = () => {
         <section className="contact-page">
             <div id="client">
                 <h1 className="contact-title">My Clients</h1>
-                <p className="client-description"> I have had the opprtunity to worl with a diverse group of companies.
+                <p className="client-description"> I have had the opprtunity to work  with a diverse group of companies.
                     Some of the notable companies I have worked with includes
                 </p>
                 <div className="client-imgs">
@@ -47,17 +47,28 @@ const Contact = () => {
                 <span className="contact-description"> Please fillout the form below to discuss more about work opportunities
                 </span> 
                 <form className="contact-form" ref={form} onSubmit={sendEmail}>
-                    <input type="text" className="name" placeholder="Your Name" name='your_name' />
-                    <input type="email" className="email" placeholder="Your Email"  name='your_email'/>
+                    <input type="text" className="name" placeholder="Your Name" name='your_name' required />
+                    <input type="email" className="email" placeholder="Your Email"  name='your_email' required/>
                     <textarea className="msg" name="message" rows="5" placeholder="Your Message"></textarea> 
+                    <div className='Submit'>
                     <button type='submit' value='send' className="submitbtn">Submit</button>
+                    </div>
                 </form>
                 <div className="links">
-                <img src={Instagrams} alt="" className="link" />
-                <img src={Facebooks} alt="" className="link" />
-                <img src={Github} alt="" className="link" />
-                <img src={LinkedIn} alt="" className="link" />
-                </div>
+                  
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img src={Instagrams} alt="Instagram" className="link" />
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img src={Facebooks} alt="Facebook" className="link" />
+                    </a>
+                    <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+                        <img src={Github} alt="GitHub" className="link" />
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <img src={LinkedIn} alt="LinkedIn" className="link" />
+                    </a>
+                    </div>
             </div>
 
         </section>
